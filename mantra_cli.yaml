@@ -1,0 +1,39 @@
+tabSize: 2
+templates:
+  - name: 'method'
+    text: |
+      import {Meteor} from 'meteor/meteor';
+      import {ValidatedMethod} from 'meteor/mdg:validated-method';
+      import {SimpleSchema} from 'meteor/aldeed:simple-schema';
+      import {<%= methodFileName %>} from '/lib/collections';
+
+      export default function () {
+        return {
+          // nazev metody ktery pouzivame pri volani po importu
+          create: new ValidatedMethod({
+
+            // nazev, ktery volame pri Meteor.call()
+            name: '<%= methodFileName %>.create',
+
+            // validace vstupnich promennych
+            validate: new SimpleSchema({
+              title: { type: String }
+            }).validator(),
+
+            applyOptions: {
+              noRetry: true,
+            },
+
+            // hlavni kod
+            run({title}) {
+
+              // na tomto miste overime opravneni uzivatele
+              // prihlaseni konkretniho uzivatele a jeho pusobnost v patricne roli
+              throw new Meteor.Error('xxx', 'popis');
+              console.log(title);
+
+            },
+
+          })
+        };
+      }
