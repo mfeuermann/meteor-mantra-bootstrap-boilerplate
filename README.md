@@ -1,8 +1,10 @@
 # Meteor 1.4 Mantra React Bootstrap boilerplate
 Simple Meteor 1.4 boilerplate (Meteor.js + Mantra + ReactBootstrap + Logging + authentication)
 
-Features
+###Features
 - Simple admin template 
+- Mantra application framework
+- React Bootstrap integration
 - Basic Meteor account password for user authentication
 - Users roles integration (alanning:roles)
 - User management
@@ -14,7 +16,11 @@ Features
 - Cron jobs (percolate:synced-cron)
 - Syncing time between server and client (mizzao:timesync)
 
-How to install
+###How to install
+
+
+
+###Configuration 
 
 
 
