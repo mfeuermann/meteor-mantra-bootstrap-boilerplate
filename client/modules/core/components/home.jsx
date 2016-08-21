@@ -1,20 +1,90 @@
 import React from 'react';
+import { Label, Panel, Breadcrumb } from 'react-bootstrap';
+
+
+const title = (
+  <h3>Tickets</h3>
+);
 
 const Home = () => (
-  <div>
-    <h1>Mantra</h1>
-    <p>
-      Welcome to Mantra 0.2.0.
-    </p>
-    <ul>
-      <li>
-        Read <a target="_blank" href="https://kadirahq.github.io/mantra/">spec</a>
-      </li>
-      <li>
-        Learn <a target="_blank" href="https://github.com/sungwoncho/mantra-cli#commands">CLI</a>
-      </li>
-    </ul>
+<div>
+    <Breadcrumb>
+     <Breadcrumb.Item active>
+       Dashboard
+     </Breadcrumb.Item>
+   </Breadcrumb>
+
+   <h4>Dashboard</h4>
+  <div className='row'>
+      <div className="col-lg-6">
+        <Panel header={title}>
+          <div>
+            <table className="table table-bordered table-hover table-stripped">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Owner</th>
+                <th>State</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Last activity</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>15.6.2016</td>
+                <td>MFEUERMANN</td>
+                <td><Label bsStyle="success">Opened</Label></td>
+                <td>Information about LLIR</td>
+                <td>...</td>
+                <td>15.8.2015</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>15.6.2016</td>
+                <td>MFEUERMANN</td>
+                <td><Label bsStyle="success">Opened</Label></td>
+                <td>Information about LLIR</td>
+                <td>...</td>
+                <td>15.8.2015</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>15.6.2016</td>
+                <td>MFEUERMANN</td>
+                <td><Label bsStyle="success">Opened</Label></td>
+                <td>Information about LLIR</td>
+                <td>...</td>
+                <td>15.8.2015</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>15.6.2016</td>
+                <td>MFEUERMANN</td>
+                <td><Label bsStyle="success">Opened</Label></td>
+                <td>Information about LLIR</td>
+                <td>...</td>
+                <td>15.8.2015</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>15.6.2016</td>
+                <td>MFEUERMANN</td>
+                <td><Label bsStyle="success">Opened</Label></td>
+                <td>Information about LLIR</td>
+                <td>...</td>
+                <td>15.8.2015</td>
+                <td></td>
+              </tr>
+
+            </tbody>
+          </table>
+          </div>
+        </Panel>
+      </div>
   </div>
+</div>
 );
 
 export default Home;

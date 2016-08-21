@@ -1,7 +1,4 @@
 {
   "public": {
-  },
-  "env": {
-      "TZ": "ETC/UTC"
   }
 }

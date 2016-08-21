@@ -22,31 +22,28 @@ var Layout = React.createClass({
       // pokud je prihlaseny, kontrolujeme jestli existuje spojeni se serverem
       if (status !== 'waiting') {
         result = (<div>
-          <Menu />
-          <div>
-
-        <Grid fluid>
-          <Row>
-            <Col xs={18} md={12}>{content()}</Col>
-          </Row>
-        </Grid>
-          </div>
+                <Menu />
+                <div>
+                    <Grid fluid>
+                      <Row>
+                        <Col xs={18} md={12}>{content()}</Col>
+                      </Row>
+                    </Grid>
+                </div>
         </div>);
       // pokud neexistuje spojeni se serverem
       } else {
         result = (<div>
-
-          <Menu />
-          <div>
-         <Status/>
-
-        <Grid fluid>
-          <Row>
-            <Col xs={18} md={12}>{content()}</Col>
-          </Row>
-        </Grid>
-          </div>
-        </div>);
+                      <Menu />
+                    <div>
+                      <Status/>
+                      <Grid fluid>
+                        <Row>
+                          <Col xs={18} md={12}>{content()}</Col>
+                        </Row>
+                      </Grid>
+                    </div>
+                  </div>);
       }
     // pokud uzivatel neni prihlasen
     } else {
@@ -57,7 +54,6 @@ var Layout = React.createClass({
     return (
       <div>
         {result}
-
       </div>
     );
   }

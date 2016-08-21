@@ -13,12 +13,12 @@ class Status extends React.Component {
   <div className="static-modal custom-modal-alert">
     <Modal.Dialog>
       <Modal.Header>
-        <Modal.Title>Upozornění</Modal.Title>
+        <Modal.Title>Warning</Modal.Title>
       </Modal.Header>
 
       <Modal.Body>
-          Došlo k rozpadu spojení se serverem aplikace! <br/>
-          Pokus o navázání spojení {status.retryCount}x
+          Connection to server is disconnected! <br/>
+          Reconnection -{status.retryCount}x
       </Modal.Body>
 
     </Modal.Dialog>
