@@ -2,13 +2,13 @@
 Simple Meteor 1.4 boilerplate (Meteor.js + Mantra + ReactBootstrap + Logging + authentication)
 
 ### Features
-- Simple admin template layout powered by Bootswatch SpaceLab theme
-- Mantra application framework
-- React Bootstrap integration
+- Simple admin template (powered by Bootswatch SpaceLab theme)
+- Created with Mantra application architecture
+- Using React Bootstrap
 - Basic Meteor account password for user authentication
 - Users roles integration (alanning:roles)
-- User management view
-- Roles management view
+- User management
+- Roles management
 - React Formsy integration (with validation examples)
 - Custom Mantra CLI yaml (different method definition)
 - Validated methods integration (mdg:validated-method)
@@ -18,6 +18,9 @@ Simple Meteor 1.4 boilerplate (Meteor.js + Mantra + ReactBootstrap + Logging + a
 
 ### How to install
 
-
+Clone GIT repo and call install command
+```
+npm install --save
+```
 
 ### Configuration
