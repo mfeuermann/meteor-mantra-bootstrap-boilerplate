@@ -26,7 +26,7 @@ const Home = () => (
                 <th>Owner</th>
                 <th>State</th>
                 <th>Title</th>
-                <th>Description</th>
+                <th>Name</th>
                 <th>Last activity</th>
                 <th>Action</th>
               </tr>
@@ -37,7 +37,7 @@ const Home = () => (
                 <td>MFEUERMANN</td>
                 <td><Label bsStyle="success">Opened</Label></td>
                 <td>Information about LLIR</td>
-                <td>...</td>
+                <td>Martin Gredner</td>
                 <td>15.8.2015</td>
                 <td></td>
               </tr>
@@ -71,7 +71,7 @@ const Home = () => (
               <tr>
                 <td>15.6.2016</td>
                 <td>MFEUERMANN</td>
-                <td><Label bsStyle="success">Opened</Label></td>
+                <td><Label bsStyle="error">Closed</Label></td>
                 <td>Information about LLIR</td>
                 <td>...</td>
                 <td>15.8.2015</td>
