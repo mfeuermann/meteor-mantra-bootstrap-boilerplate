@@ -5,18 +5,18 @@ export default {
 
     Meteor.loginWithPassword(username, password, (err) => {
       if (err) {
-        LocalState.set('CHYBA', 'Chybné přihlášení!');
+        LocalState.set('CHYBA', 'Login failure!');
       } else {
-        FlowRouter.go('/zdroj');
+        FlowRouter.go('/');
       }
     });
 
   },
 
-  logout({Meteor, LocalState, Collections, FlowRouter}) {
+  logout({Meteor,FlowRouter}) {
 
     Meteor.logout();
-    // FlowRouter.go('/');
+    FlowRouter.go('/');
 
   }
 };

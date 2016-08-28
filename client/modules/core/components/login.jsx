@@ -32,7 +32,8 @@ const { Checkbox, CheckboxGroup, Input, RadioGroup, Row, Select, File, Textarea 
 
     return (
         <div className="wrapper">
-
+          <div className="row">
+                 <div className="col-md-12">
         <Formsy.Form className='form-signin' onValidSubmit={this.submit} onValid={this.enableButton} onInvalid={this.disableButton} ref='form'>
             <h2 className="form-signin-heading" style={{textAlign: 'center'}}>MyApp</h2>
               <Input
@@ -56,9 +57,11 @@ const { Checkbox, CheckboxGroup, Input, RadioGroup, Row, Select, File, Textarea 
             <button className="btn btn-lg btn-danger btn-block" type="submit" disabled={!this.state.canSubmit}>SignIn</button>
               <div style={{textAlign: 'center', color: 'red'}}> <h3>{chyba}</h3> </div>
         </Formsy.Form>
+            </div>
+        </div>
       </div>
     );
   }
-});
+ });
 
 export default Login;

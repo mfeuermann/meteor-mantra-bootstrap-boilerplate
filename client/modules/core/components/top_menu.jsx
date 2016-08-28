@@ -22,7 +22,7 @@ const TopMenu = React.createClass({
       <Navbar fluid>
         <Navbar.Header>
           <Navbar.Brand>
-            TEMPLATE APP
+            <a href='/'>TEMPLATE APP</a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
@@ -35,7 +35,7 @@ const TopMenu = React.createClass({
               <NavDropdown eventKey={4} title="CONFIGURATION" id="basic-nav-dropdown">
                 <MenuItem eventKey={4.2} href="/users/">Users management</MenuItem>
                 <MenuItem divider />
-                <MenuItem eventKey={4.5}>Separated link</MenuItem>
+                <MenuItem onClick={this.logout} eventKey={4.5}>Logout</MenuItem>
               </NavDropdown>
           </Nav>
         </Navbar.Collapse>
