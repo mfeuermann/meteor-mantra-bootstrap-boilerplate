@@ -8,7 +8,7 @@ Simple Meteor 1.4 boilerplate (Meteor.js + Mantra + ReactBootstrap + Logging + a
 - Basic Meteor account password for user authentication
 - Users roles integration (alanning:roles)
 - User management
-- Roles management
+- Roles definition
 - React Formsy integration (with validation examples)
 - Custom Mantra CLI yaml (different method definition)
 - Validated methods integration (mdg:validated-method)
@@ -31,3 +31,6 @@ meteor
 ```
 
 ### Configuration
+
+Default username and password : admin / admin
+Delete folder /server/deleteAfterInstall (using for initial creating admin)
