@@ -23,4 +23,11 @@ Clone GIT repo and call install command
 npm install --save
 ```
 
+### How to run
+
+You can run with meteor command or edit ./run.sh
+```
+meteor
+```
+
 ### Configuration
