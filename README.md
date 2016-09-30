@@ -14,6 +14,7 @@ Simple Meteor 1.4 boilerplate (Meteor.js + Mantra + ReactBootstrap + Logging + a
 - Validated methods integration (mdg:validated-method)
 - Logging to Loggly from client and server
 - Cron jobs (percolate:synced-cron)
+- Meteor / Picker added from server call and ssr requests
 - Syncing time between server and client (mizzao:timesync)
 
 ### How to install
